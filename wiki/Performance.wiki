@@ -1,0 +1,8 @@
+#summary Current performance specification
+
+Many DNP3 stacks/products quote performance numbers in terms of points/sec without specifying how the tests are conducted. These tests could be easily inflated by adjusting the test conditions, types reported, etc. Our integration test configuration is as follows:
+
+  * 100 master/slave pairs talking on the loopback of a single machine
+  * Unsolicited messages with no delay/pack timer
+  * Even mixture of binary(Group2Var1), analog (Group32Var1), and counter (Group22Var1) events
+  * 
