@@ -1,0 +1,14 @@
+#summary List of community driven features
+
+== What can the community do to help? ==
+
+We are generated a list of features that we will triage and vote on as a community for future releases. So far we have:
+
+  * DNP secure authentication
+  * TLS security implementation via Boost.Asio's support for OpenSSL
+  * Improved code documentation and testing
+  * Security testing using targeted exploits and fuzzing
+  * File transfer and device profile support
+  * Improved test set and config file support
+  * Platform independent XML binding support
+  * Multi-core support using boost::asio::io_service::strand
