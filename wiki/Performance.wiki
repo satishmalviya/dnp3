@@ -4,5 +4,14 @@ Many DNP3 stacks/products quote performance numbers in terms of points/sec witho
 
   * 100 master/slave pairs talking on the loopback of a single machine
   * Unsolicited messages with no delay/pack timer
-  * Even mixture of binary(Group2Var1), analog (Group32Var1), and counter (Group22Var1) events
-  * 
+  * Even mixture of binary, analog, and counter events
+
+With this configuration, a 2.2Ghz Xeon running Ubuntu can push 600K-700K points per second!
+
+Linux maintains fairly constant performance as the number of connections goes from 1-100 connections.
+
+The number of measurements "pushed" is calculated as follows:
+
+NUMBER_POINTS_CHANGES_CYCLE*NUM_CYCLES*NUM_PAIRS*2
+
+We multiple the point count since a frontend would only have to perform 1/2 of the computation.
