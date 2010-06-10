@@ -6,7 +6,7 @@ Many DNP3 stacks/products quote performance numbers in terms of points/sec witho
   * Unsolicited messages with no delay/pack timer
   * Even mixture of binary, analog, and counter events
 
-With this configuration, a *single core* of a 2.2Ghz Xeon running Ubuntu can push *600K-700K points per second*!
+With this configuration, a *single core* of a 2.2Ghz Xeon running Ubuntu 8.04 server can push *600K-700K points per second*!
 
 Linux maintains fairly constant performance as the number of connections goes from 1-100 connections. Windows does not seem to scale as well. Benchmarking and understanding this would make a nice side project.
 
