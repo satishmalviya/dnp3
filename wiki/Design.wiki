@@ -1,3 +1,5 @@
 #summary Details the major design issues
 
-The stack uses a completely asynchronous design. All of open/read/write/close operations complete via a callback. We use [http://www.boost.org/doc/libs/1_43_0/doc/html/boost_asio.html Boost.Asio] 
+The stack uses a completely asynchronous design. All of open/read/write/close operations complete via a callback. [http://www.boost.org/doc/libs/1_43_0/doc/html/boost_asio.html Boost.Asio] provides us with an asynchronous framework and cross-platform networking and serial support. This enables the execution of hundreds of parallel connections in a non-blocking manner with minimal thread overhead. Asio implements the [http://www.boost.org/doc/libs/1_43_0/doc/html/boost_asio/overview/core/async.html proactor design pattern].
+
+When implementing an asynchronous system, much of the program state that you previously were able to carry implicitly on the call stack must now be carried explicitly in mutable data. Without discipline.
