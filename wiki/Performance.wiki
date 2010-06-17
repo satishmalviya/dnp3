@@ -22,4 +22,4 @@ Further analysis of the stack with the Valgrind callgrind tool reveals that only
 
 = *0.9 - 1.05 Million points per second* =
 
- 
+With the overhead of DNP + TCP/IP + ethernet + latency this effectively makes the stack network bound!
