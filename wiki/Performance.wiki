@@ -6,12 +6,20 @@ Many DNP3 stacks/products quote performance numbers in terms of points/sec witho
   * Unsolicited messages with no delay/pack timer
   * Even mixture of binary, analog, and counter events
 
-With this configuration, a *single core* of a 2.2Ghz Xeon running Ubuntu 8.04 server can push *600K-700K points per second*!
+This test can be found in *DNP3Tests\TestAsyncIntegration.cpp*
 
-Linux maintains fairly constant performance as the number of connections goes from 1-100 connections. Windows does not seem to scale as well. Benchmarking and understanding this would make a nice side project.
+With this configuration, a single core of a 2.2Ghz Xeon running Ubuntu 8.04 server can push 600K-700K points per second!
 
 The number of measurements "pushed" is calculated as follows:
 
-NUMBER_POINTS_CHANGES_CYCLE*NUM_CYCLES*NUM_PAIRS*2
+*NUMBER_POINTS_CHANGES_CYCLE*NUM_CYCLES*NUM_PAIRS*2*
 
 We multiply the point count since a frontend would only have to perform 1/2 of the computation.
+
+Linux maintains fairly constant performance as the number of connections goes from 1-100 connections. Windows does not seem to scale as well. Benchmarking and understanding this would make a nice side project.
+
+Further analysis of the stack with the Valgrind callgrind tool reveals that only 66% of the total time spent is inside the stack, and the rest is test overhead that is checking for measurement correctness. This allows us to multiply the above factor of 600-700K by an additional (1/.66) ~ 150% meaning that the true performance of the core stack on the loopback is:
+
+*0.9 - 1.05 Million points per second*
+
+ 
