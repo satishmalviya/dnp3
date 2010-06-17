@@ -20,6 +20,6 @@ Linux maintains fairly constant performance as the number of connections goes fr
 
 Further analysis of the stack with the Valgrind callgrind tool reveals that only 66% of the total time spent is inside the stack, and the rest is test overhead that is checking for measurement correctness. This allows us to multiply the above factor of 600-700K by an additional (1/.66) ~ 150% meaning that the true performance of the core stack on the loopback is:
 
-*0.9 - 1.05 Million points per second*
+= *0.9 - 1.05 Million points per second* =
 
  
