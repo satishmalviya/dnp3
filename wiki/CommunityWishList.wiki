@@ -7,7 +7,7 @@ We are generated a list of features that we will triage and vote on as a communi
   * DNP secure authentication
   * TLS security implementation via [http://www.boost.org/doc/libs/1_43_0/doc/html/boost_asio/overview/ssl.html Boost.Asio's support for OpenSSL]
   * Improved code documentation and testing
-  * Security testing using targeted exploits and fuzzing
+  * Additional security testing
   * File transfer and device profile support
   * Improved test set and config file support
   * Platform independent XML binding support
