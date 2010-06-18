@@ -1,0 +1,5 @@
+#summary Rake C++ Build System
+
+We're using Rake for building on non-Windows platforms. You can read more about the decision on [http://agile-automata.net/?p=232 Agile Automata].
+
+We can post information on the build system on this page.
