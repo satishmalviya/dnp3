@@ -1,3 +1,3 @@
 #summary Security testing conducted on the stack
 
-Green Energy Corp has performed fuzz testing on the stack using the [http://peachfuzzer.com/ Peach Fuzzing Platform]. A few  small issues have been identified using this tool and subsequently resolved. A custom 'pit' file has been defined that describes datalink, transport, and application layer packet structure. The fuzzer will continue to be improved via defined more application layer constructs and coverage analysis.
+Green Energy Corp has performed fuzz on the stack. A few  small issues have been identified using this tool and subsequently resolved. A the moment the fuzzer only naively penetrates up to the application layer. You can see the automated test coverage of this on the Hudson site. The fuzzer will continue to be improved via defined more application layer constructs and coverage analysis.
