@@ -1,0 +1,6 @@
+#summary Instructions for contributing to the project
+#labels contribution,cla
+
+= Contribution =
+
+Contributors must execute a Contributor License Agreement. This protects copyright interest and prevents incorporation of any patented technology. This process is similar to what the Apache Software Foundation requires of contributors. The CLA can be downloaded here.
