@@ -3,8 +3,20 @@
 
 = Contribution =
 
-== Contribution License Agreement (CLA) ==
+== Contributor License Agreement (CLA) ==
 
 Contributors must execute a CLA. This protects copyright interest and prevents incorporation of any patented technology. This process is similar to what the Apache Software Foundation requires of contributors. The CLA can be downloaded [http://dnp3.googlecode.com/files/GEC%20Contribution%20License%20Agreement.doc here].
 
+Disregard the current fax number in the document. You may fix your CLA here:
+
+919-836-9918
+Attention: Tricia Desmarais
+
 == Workflow ==
+
+The project uses Github for version control. Every contributor works on their own fork of the project:
+
+1) Fork the project, creating a personal copy for yourself.
+2) Make your changes and commit them back to your fork
+3) Submit a 'pull request' to greenenergycorp or send an email to the google group
+4) Someone will review your changes, possibly negotiate modifications, and then merge your changes into the mainline.
