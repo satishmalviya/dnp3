@@ -3,4 +3,8 @@
 
 = Contribution =
 
-Contributors must execute a Contributor License Agreement. This protects copyright interest and prevents incorporation of any patented technology. This process is similar to what the Apache Software Foundation requires of contributors. The CLA can be downloaded [http://dnp3.googlecode.com/files/GEC%20Contribution%20License%20Agreement.doc here].
+== Contribution License Agreement (CLA) ==
+
+Contributors must execute a CLA. This protects copyright interest and prevents incorporation of any patented technology. This process is similar to what the Apache Software Foundation requires of contributors. The CLA can be downloaded [http://dnp3.googlecode.com/files/GEC%20Contribution%20License%20Agreement.doc here].
+
+== Workflow ==
