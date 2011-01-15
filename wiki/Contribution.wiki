@@ -5,7 +5,7 @@
 
 == Contributor License Agreement (CLA) ==
 
-Contributors must execute a CLA. This protects copyright interest and prevents incorporation of any patented technology. This process is similar to what the Apache Software Foundation requires of contributors. The CLA can be downloaded [http://www.totalgrid.org/storage/GEC%20Contribution%20License%20Agreement.doc here].
+Contributors must execute a CLA. This protects copyright interest and prevents incorporation of any patented technology. This process is similar to what the Apache Software Foundation requires of contributors. The CLA can be downloaded [http://www.totalgrid.org/storage/GECContributionLicenseAgreement.doc here].
 
 Disregard the current fax number in the document. You may fax the executed CLA here:
 
