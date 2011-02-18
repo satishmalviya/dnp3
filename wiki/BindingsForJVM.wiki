@@ -30,7 +30,7 @@ The shared library is platform/architecture/kernel dependent. We have pre-compil
 
 The library must be placed in a folder that is on the Java library path. A safe bet is C:/windows/system32 for windows or /usr/lib for Linux.
 
-If you are unsure what this value is set to for your JVM, example the java.library.path Java environment variable.
+If you are unsure what this value is set to for your JVM, examine the java.library.path Java environment variable.
 
 
 = Examples =
