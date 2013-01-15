@@ -1,6 +1,6 @@
 #summary Current performance specification
 
-Many DNP3 stacks/products quote performance numbers in terms of points/sec without specifying how the tests are conducted. These tests could be easily inflated by adjusting the test conditions, types reported, etc. Our integration test configuration is as follows:
+Many SCADA products quote performance numbers in terms of points/sec without specifying how the tests are conducted. These tests could be easily inflated by adjusting the test conditions, types reported, etc. Our integration test configuration is as follows:
 
   * 100 master/slave pairs talking on the loopback of a single machine
   * Unsolicited messages with no delay/pack timer
@@ -8,18 +8,12 @@ Many DNP3 stacks/products quote performance numbers in terms of points/sec witho
 
 This test can be found in *`DNP3Tests/TestAsyncIntegration.cpp`*
 
-With this configuration, a single core of a 2.2Ghz Xeon running Ubuntu 8.04 server can push 600K-700K points per second!
+With this configuration, a quad core of a 2.2Ghz Xeon running Windows 7 can push 3M points per second!
 
 The number of measurements "pushed" is calculated as follows:
 
 *NUMBER_POINTS_CHANGES_CYCLE*NUM_CYCLES*NUM_PAIRS*2*
 
 We multiply the point count since a frontend would only have to perform 1/2 of the computation.
-
-Linux maintains fairly constant performance as the number of connections goes from 1-100 connections. Windows does not seem to scale as well. Benchmarking and understanding this would make a nice side project.
-
-Further analysis of the stack with the Valgrind callgrind tool reveals that only 66% of the total time spent is inside the stack, and the rest is test overhead that is checking for measurement correctness. This allows us to multiply the above factor of 600-700K by an additional (1/.66) ~ 150% meaning that the true performance of the core stack on the loopback is:
-
-= *0.9 - 1.05 Million points per second* =
 
 With the overhead of DNP + TCP/IP + ethernet + latency this effectively makes the stack network bound!
