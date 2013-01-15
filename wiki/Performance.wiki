@@ -6,9 +6,9 @@ Many SCADA products quote performance numbers in terms of points/sec without spe
   * Unsolicited messages with no delay/pack timer
   * Even mixture of binary, analog, and counter events
 
-This test can be found in *`DNP3Tests/TestAsyncIntegration.cpp`*
+This test can be found in *`DNP3Test/TestAsyncIntegration.cpp`*
 
-With this configuration, a quad core of a 2.2Ghz Xeon running Windows 7 can push 3M points per second!
+With this configuration, a quad core *laptop* running Windows 7 can push 3 million points per second!
 
 The number of measurements "pushed" is calculated as follows:
 
