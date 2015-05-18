@@ -1,0 +1,1 @@
+Green Energy Corp has performed fuzz testing on the stack. A few  small issues have been identified using this tool and resolved. At the moment, the fuzzer only naively penetrates up to the application layer. You can see the automated test coverage on Hudson. The fuzzer will continue to be improved by defining more application layer constructs and improving coverage results.
